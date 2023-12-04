@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(1, 4, 103, 0.928);
+    color: white;
+}
+
+.bmi-container{
+    background-color:rgba(6, 114, 156, 0.996);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    height: 70%;
+    width: 50%;
+    padding: 2rem 4rem;
+}
+
+.container h1{
+    font-size: 2.5rem;
+}
+
+.info-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.weight-inp, .height-inp ,.calculated-bmi{
+    font-size: 1.3rem;
+}
+
+span{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.calculated-bmi{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.inp-style input{
+    padding: 0.3rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+
+#calculate-btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    width: 8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+#calculate-btn:hover{
+    background-color: rgba(83, 193, 236, 0.556)
+}
+
+.bmi-info h2{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.bmi-info li{
+    font-weight: 300;
+    line-height: 2;
+}
